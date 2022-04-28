@@ -7,8 +7,9 @@ const TEST_CASES = [
   ['get.name', 'getName'],
   ['get/name', 'getName'],
   ['GetName', 'getName'],
+  ['Get Name', 'getName'],
   ['GET_NAME', 'getName'],
-  ['version 10.2.34', 'version_10_2_34']
+  ['version 10.2.34', 'version_10_2_34'],
 ]
 
 TEST_CASES.forEach(([input, result]) => {

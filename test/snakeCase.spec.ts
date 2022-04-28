@@ -7,6 +7,7 @@ const TEST_CASES = [
   ['get.name', 'get_name'],
   ['get/name', 'get_name'],
   ['GetName', 'get_name'],
+  ['Get Name', 'get_name'],
   ['GET_NAME', 'get_name'],
   ['version 10.2.34', 'version_10_2_34'],
 ]
