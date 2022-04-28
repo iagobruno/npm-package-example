@@ -62,10 +62,6 @@
     {
       "path": "dist/npm-package-example.esm.js",
       "limit": "10 KB"
-    },
-    {
-      "path": "dist/npm-package-example.umd.production.min.js",
-      "limit": "10 KB"
     }
   ],
   "keywords": [
