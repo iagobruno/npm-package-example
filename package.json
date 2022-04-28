@@ -1,0 +1,69 @@
+{
+  "version": "0.1.0",
+  "name": "npm-package-example",
+  "license": "MIT",
+  "author": "Iago Bruno",
+  "main": "dist/index.js",
+  "module": "dist/npm-package-example.esm.js",
+  "unpkg": "dist/npm-package-example.umd.production.min.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "dev": "tsdx watch",
+    "build": "tsdx build --format cjs,esm,umd",
+    "test": "tsdx test",
+    "lint": "tsdx lint",
+    "typecheck": "tsc --noEmit",
+    "prepare": "tsdx build",
+    "size": "size-limit",
+    "analyze": "size-limit --why"
+  },
+  "peerDependencies": {},
+  "devDependencies": {
+    "@size-limit/preset-small-lib": "^7.0.8",
+    "@typescript-eslint/eslint-plugin": "^5.21.0",
+    "@typescript-eslint/parser": "^5.21.0",
+    "eslint": "^8.14.0",
+    "husky": "^7.0.4",
+    "size-limit": "^7.0.8",
+    "tsdx": "^0.14.1",
+    "tslib": "^2.4.0",
+    "typescript": "^4.6.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
+  },
+  "size-limit": [
+    {
+      "path": "dist/npm-package-example.cjs.production.min.js",
+      "limit": "10 KB"
+    },
+    {
+      "path": "dist/npm-package-example.esm.js",
+      "limit": "10 KB"
+    },
+    {
+      "path": "npm-package-example.umd.production.min.js",
+      "limit": "10 KB"
+    }
+  ],
+  "keywords": [
+    "case",
+    "camel-case",
+    "pascal-case",
+    "kebab-case",
+    "snake-case",
+    "UMD",
+    "node",
+    "browser",
+    "typescript"
+  ]
+}
