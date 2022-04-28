@@ -1,8 +1,11 @@
 {
   "version": "0.1.0",
   "name": "npm-package-example",
+  "description": "A good npm package",
   "license": "MIT",
   "author": "Iago Bruno",
+  "homepage": "https://github.com/iagobruno/npm-package-example#readme",
+  "repository": "github:iagobruno/npm-package-example",
   "main": "dist/index.js",
   "module": "dist/npm-package-example.esm.js",
   "unpkg": "dist/npm-package-example.umd.production.min.js",
