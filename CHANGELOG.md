@@ -1,5 +1,7 @@
 
 
+## [0.2.1](https://github.com/iagobruno/npm-package-example/compare/0.2.0...0.2.1) (2022-04-28)
+
 # 0.2.0 (2022-04-28)
 
 
