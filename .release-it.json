@@ -1,0 +1,29 @@
+{
+  "Learn more": "https://github.com/release-it/release-it",
+  "hooks": {
+    "//before:init": [
+      "yarn lint",
+      "yarn typecheck",
+      "yarn test"
+    ]
+  },
+  "git": {
+    "commitMessage": "chore: Release v${version}",
+    "requireCleanWorkingDir": false
+  },
+  "npm": {
+    "publish": false
+  },
+  "github": {
+    "release": true,
+    "releaseName": "Release ${version}",
+    "autoGenerate": true,
+    "tokenRef": "RELEASE_IT_GITHUB_TOKEN"
+  },
+  "plugins": {
+    "@release-it/conventional-changelog": {
+      "preset": "angular",
+      "infile": "CHANGELOG.md"
+    }
+  }
+}
