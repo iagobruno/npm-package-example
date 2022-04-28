@@ -64,7 +64,7 @@
       "limit": "10 KB"
     },
     {
-      "path": "npm-package-example.umd.production.min.js",
+      "path": "dist/npm-package-example.umd.production.min.js",
       "limit": "10 KB"
     }
   ],
