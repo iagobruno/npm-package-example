@@ -1,5 +1,5 @@
 {
-  "version": "0.1.0",
+  "version": "0.2.0",
   "name": "npm-package-example",
   "description": "A good npm package",
   "license": "MIT",
@@ -24,11 +24,13 @@
     "lint": "eslint **/*.ts",
     "typecheck": "tsc --noEmit",
     "//prepare": "tsdx build",
+    "release": "release-it",
     "size": "size-limit",
     "analyze": "size-limit --why"
   },
   "peerDependencies": {},
   "devDependencies": {
+    "@release-it/conventional-changelog": "^4.3.0",
     "@size-limit/preset-small-lib": "^7.0.8",
     "@swc/core": "^1.2.173",
     "@swc/jest": "^0.2.20",
@@ -44,6 +46,7 @@
     "husky": "^7.0.4",
     "jest": "^28.0.2",
     "prettier": "^2.6.2",
+    "release-it": "^14.14.2",
     "size-limit": "^7.0.8",
     "tsdx": "^0.14.1",
     "tslib": "^2.4.0",
