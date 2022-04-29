@@ -10,7 +10,7 @@ Um exemplo de como criar um bom pacote para o NPM.
 ![Module system](https://img.shields.io/badge/module%20system-ESM%2C%20CJS%2C%20UMD-brightgreen)
 ![npm type definitions](https://img.shields.io/badge/types-TypeScript-blue)
 
-[![.github/workflows/tests.yml](https://github.com/iagobruno/npm-package-example/actions/workflows/tests.yml/badge.svg)](https://github.com/iagobruno/npm-package-example/actions/workflows/tests.yml)
+[![Tests](https://github.com/iagobruno/npm-package-example/actions/workflows/tests.yml/badge.svg?branch=main&event=push)](https://github.com/iagobruno/npm-package-example/actions/workflows/tests.yml)
 ![Coveralls](https://img.shields.io/coveralls/github/iagobruno/npm-package-example)
 ![Code quality](https://img.shields.io/scrutinizer/quality/g/iagobruno/npm-package-example)
 
@@ -20,14 +20,13 @@ Um exemplo de como criar um bom pacote para o NPM.
 - [x] Usar TypeScript
 - [x] Usar o eslint e o prettier
 - [x] Testar o pacote usando o Jest
-- Publicar no NPM
-- Automatização
+- [ ] Publicar no NPM
+- [ ] Automatização
   - [x] Executar os testes em pull-requests
-  - Publicar no NPM automaticamente quando criar uma tag no git
   - [x] Gerar uma release no github automaticamente com o changelog
-  - Publicar uma nova versão da documentação quando modificar a pasta "docs"
+  - [ ] Publicar uma nova versão da documentação quando modificar a pasta "docs"
 - [x] Escrever um bom README
-- Criar um site de documentação
+- [ ] Criar um site de documentação
 
 ## Installation
 

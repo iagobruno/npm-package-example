@@ -1,18 +1,19 @@
 {
-  "Learn more": "https://github.com/release-it/release-it",
+  "// Learn more": "https://github.com/release-it/release-it",
   "hooks": {
-    "//before:init": [
+    "before:init": [
       "yarn lint",
       "yarn typecheck",
-      "yarn test"
+      "yarn test",
+      "yarn run build"
     ]
   },
   "git": {
     "commitMessage": "chore: Release v${version}",
-    "requireCleanWorkingDir": false
+    "requireCleanWorkingDir": true
   },
   "npm": {
-    "publish": false
+    "publish": true
   },
   "github": {
     "release": true,
