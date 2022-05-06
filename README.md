@@ -4,9 +4,9 @@ Um exemplo de como criar um bom pacote para o NPM.
 
 > Transform a string between camelCase, PascalCase, Capital Case, snake_case, kebab-case and CONSTANT_CASE.
 
-[![npm](https://img.shields.io/npm/v/npm-package-example)](https://www.npmjs.com/package/npm-package-example)
-[![npm](https://img.shields.io/npm/dt/npm-package-example)](https://www.npmjs.com/package/npm-package-example)
-![npm bundle size](https://img.shields.io/bundlephobia/minzip/npm-package-example)
+[![npm](https://img.shields.io/npm/v/npm-package-example-2)](https://www.npmjs.com/package/npm-package-example-2)
+[![npm](https://img.shields.io/npm/dt/npm-package-example-2)](https://www.npmjs.com/package/npm-package-example-2)
+![npm bundle size](https://img.shields.io/bundlephobia/minzip/npm-package-example-2)
 ![Module system](https://img.shields.io/badge/module%20system-ESM%2C%20CJS%2C%20UMD-brightgreen)
 ![npm type definitions](https://img.shields.io/badge/types-TypeScript-blue)
 
@@ -18,12 +18,12 @@ Um exemplo de como criar um bom pacote para o NPM.
 
 - [x] Permitir tree-shaking
 - [x] Usar TypeScript
-- [x] Usar o eslint e o prettier
+- [x] Usar o eslint e o Prettier
 - [x] Testar o pacote usando o Jest
-- [ ] Publicar no NPM
-- [ ] Automatização
+- [x] Publicar no NPM
+- [x] Automatização
   - [x] Executar os testes em pull-requests
-  - [x] Gerar uma release no github automaticamente com o changelog
+  - [x] Gerar uma release no Github automaticamente com o changelog
   - [ ] Publicar uma nova versão da documentação quando modificar a pasta "docs"
 - [x] Escrever um bom README
 - [ ] Criar um site de documentação
@@ -31,17 +31,17 @@ Um exemplo de como criar um bom pacote para o NPM.
 ## Installation
 
 ```
-npm install npm-package-example --save
+npm install npm-package-example-2 --save
 ```
 
 ```
-yarn add npm-package-example
+yarn add npm-package-example-2
 ```
 
 ## Usage
 
 ```ts
-import kebabCase from 'npm-package-example/kebabCase'
+import { kebabCase } from 'npm-package-example-2'
 
 kebabCase('Hello world') // => hello-world
 ```
@@ -50,7 +50,7 @@ It's also possible to use this package directly in the browser without any build
 
 ```html
 <script type="module">
-  import { constantCase } from 'https://unpkg.com/npm-package-example?module'
+  import { constantCase } from 'https://unpkg.com/npm-package-example-2?module'
 
   constantCase('hello-world') // => HELLO_WORLD
 </script>
